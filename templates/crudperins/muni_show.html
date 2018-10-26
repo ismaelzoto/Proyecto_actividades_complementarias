@@ -1,0 +1,17 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col s12 m12 l12">
+        <p><strong>id municipio: </strong>{{ object.id_municipio }} </p>
+        <p><strong>Nombre municipio: </strong>{{ object.nombre_municipio }} </p>
+        <p><strong>estado: </strong>{{ object.estado }} </p>
+
+        <a class= "btn" href="{% url 'municipios:muni_listar' %}">Ok</a>
+        <a class= "btn blue" href="{% url 'municipios:muni_editar' object.id_municipio%}"><i class="material-icons">create</i></a>
+        <a class="btn red" href="{% url 'municipios:muni_eliminar' object.id_municipio %}"><i class="material-icons">delete</i></a>
+    </div>
+</div>
+
+
+{% endblock %}

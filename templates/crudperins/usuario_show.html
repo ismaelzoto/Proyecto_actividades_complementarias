@@ -1,0 +1,21 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col s12 m12 l12">
+        <p><strong>clave: </strong>{{ object.clave }} </p>
+        <p><strong>id_rol: </strong>{{ object.id_rol }} </p>
+        <p><strong>nombre: </strong>{{ object.nombre }} </p>
+        <p><strong>apellido paterno: </strong>{{ object.apellido_paterno }} </p>
+        <p><strong>apellido materno: </strong>{{ object.apellido_materno }} </p>
+        <p><strong>organigrama: </strong>{{ object.organigrama }} </p>
+        <p><strong>password: </strong>{{ object.password }} </p>
+
+        <a class= "btn" href="{% url 'usuario:usuario_listar' %}">Ok</a>
+        <a class= "btn blue" href="{% url 'usuario:usuario_editar' object.password%}"><i class="material-icons">create</i></a>
+        <a class="btn red" href="{% url 'usuario:usuario_eliminar' object.password %}"><i class="material-icons">delete</i></a>
+    </div>
+</div>
+
+
+{% endblock %}

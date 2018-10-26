@@ -1,0 +1,16 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col s12 m12 l12">
+        <p><strong>N&uacute;mero de control: </strong>{{ object.id_estado }} </p>
+        <p><strong>Nombre: </strong>{{ object.nombre_estado }} </p>
+
+        <a class= "btn" href="{% url 'estados:estado_lista' %}">Ok</a>
+        <a class= "btn blue" href="{% url 'estados:estado_edita' object.id_estado %}"><i class="material-icons">create</i></a>
+        <a class="btn red" href="{% url 'estados:estado_borrar' object.id_estado %}"><i class="material-icons">delete</i></a>
+    </div>
+</div>
+
+
+{% endblock %}

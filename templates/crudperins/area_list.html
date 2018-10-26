@@ -1,0 +1,76 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col s12 m6 l4">
+
+{% if object_list %}
+		        {% for area in object_list %}
+<div class="card orange darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">{{ area.id_area}} </span>
+          <p>{{ area.id_area }} {{ area.nombre_area }}
+        </div>
+        <div class="card-action">
+          <a class="btn btn-primary" href="#">Ver</a>
+				        <a class="btn btn-primary" href="*">Edita</a>
+				        <a class="btn btn-danger" href="*">Elimina</a>
+        </div>
+      </div>
+    {% endfor %}
+
+                {% else %}
+		            <h1>No hay registros de area</h1>
+		        {% endif %}
+
+    </div>
+</div>
+    <div class="row">
+    <div class="col s12 m12 l12">
+        <table class="striped">
+	        <thead>
+		        <tr>
+			        <td>id_area</td>
+			        <td>nombre_area</td>
+                </tr>
+            </thead>
+            <tbody>
+		        {% if object_list %}
+		        {% for usuario in object_list %}
+		        <tr>
+			        <td>{{ area.id_area }}</td>
+			        <td>{{ area.nombre_area }}</td>
+			        <td>
+                        <a class="btn red" href="{% url 'area:area_muestra' area.nombre_area %}"><i class="material-icons">zoom_in</i></a>
+                        <a class="btn yellow" href="{% url 'area:area_edita' area.nombre_area %}"><i class="material-icons">create</i></a>
+                        <a class="btn blue" href="{% url 'area:area_elimina' area.nombre_area %}"><i class="material-icons">delete</i></a>
+
+			        </td>
+		        </tr>
+		        {% endfor %}
+
+                {% else %}
+		            <h1></h1>
+		        {% endif %}
+            </tbody>
+        </table>
+    </div>
+</div>
+    <div class="row">
+        <div class="col s12 m12 l12">
+            <ul class="pagination center">
+	            <li>
+		        {% if page_obj.has_previous %}
+       	            <a class="btn orange"  href="?page={{ page_obj.previous_page_number }}"><i class="material-icons">navigate_before</i></a>
+		        {% endif %}
+                </li>
+	            <li>
+		        {% if page_obj.has_next %}
+     	            <a class="btn blue" href="?page={{ page_obj.next_page_number }}"><i class="material-icons">navigate_next</i></a>
+    	        {% endif %}
+                </li>
+            </ul>
+        </div>
+    </div>
+
+{% endblock%}

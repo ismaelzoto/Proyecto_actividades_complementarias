@@ -1,0 +1,22 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col s12 m12 l12">
+        <p><strong>Calificacion: </strong>{{ object.calificacion }} </p>
+        <p><strong>Nombre periodo: </strong>{{ object.periodo }} </p>
+        <p><strong>Actividad: </strong>{{ object.actividad }} </p>
+        <p><strong>Instructor: </strong>{{ object.instructor }} </p>
+        <p><strong>Carrera: </strong>{{ object.carrera }} </p>
+        <p><strong>Grupo: </strong>{{ object.grupo }} </p>
+        <p><strong>Area: </strong>{{ object.area }} </p>
+        <p><strong>Alumnos: </strong>{{ object.alumnos }} </p>
+
+        <a class= "btn" href="{% url 'inscripciones:inscrips_Listar' %}">Ok</a>
+        <a class= "btn blue" href="{% url 'inscripciones:inscrip_Editar' object.calificacion%}"><i class="material-icons">create</i></a>
+        <a class="btn red" href="{% url 'inscripciones:inscrip_Eliminar' object.calificacion %}"><i class="material-icons">delete</i></a>
+    </div>
+</div>
+
+
+{% endblock %}

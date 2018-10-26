@@ -1,0 +1,23 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col s12 m12 l12">
+        <p><strong>Clave Oficial : </strong>{{ object.clave_oficial }} </p>
+        <p><strong>Nombre de la carrera: </strong>{{ object.nombre_carrera }} </p>
+        <p><strong>Reticula: </strong>{{ object.reticula }} </p>
+        <p><strong>Nivel Escolar: </strong>{{ object.nivel_escolar }} </p>
+        <p><strong>Nombre Reducido: </strong>{{ object.nombre_reducido }} </p>
+        <p><strong>Carga Maxima: </strong>{{ object.carga_maxima }} </p>
+        <p><strong>Creditos Totales: </strong>{{ object.creditos_totales }} </p>
+        <p><strong>Nivel: </strong>{{ object.nivel }} </p>
+        <p><strong>Modalidad: </strong>{{ object.modalidad }} </p>
+
+        <a class= "btn" href="{% url 'carrera:carrera_listar' %}">Ok</a>
+        <a class= "btn blue" href="{% url 'carrera:carrera_editar' object.nombre %}"><i class="material-icons">create</i></a>
+        <a class="btn red" href="{% url 'carrera:carrera_eliminar' object.nombre %}"><i class="material-icons">delete</i></a>
+    </div>
+</div>
+
+
+{% endblock %}

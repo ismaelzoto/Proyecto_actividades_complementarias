@@ -1,0 +1,61 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col s12 m12 l12">
+        <h4>Filtrar por:</h4>
+        <form method="get">
+            <p>
+                id localidad : &nbsp{{ filter.form.id_localidad }} &nbsp
+                nombre localidad : &nbsp {{ filter.form.nombre_localidad }} &nbsp;
+                <button class="btn blue" type="submit">Filtrar</button>
+            </p>
+        </form>
+        <table class="striped">
+	        <thead>
+		        <tr>
+                 <td>id localidad</td>
+			        <td>Nombre de la localidad</td>
+			        <td>Municipio</td>
+                </tr>
+            </thead>
+            <tbody>
+            {% if filter.qs %}
+                {% for localidad in filter.qs %}
+		        <tr>
+                    <td>{{ localidad.id_localidad }}</td>
+			        <td>{{ localidad.nombre_localidad }}</td>
+			        <td>{{ localidad.municipio }}</td>
+			        <td>
+				        <a class="btn" href="{% url 'localidad:localidad_mostrar' localidad.id_localidad %}"><i class="material-icons">zoom_in</i></a>
+                        <a class="btn blue" href="{% url 'localidad:localidad_editar' localidad.id_localidad %}"><i class="material-icons">create</i></a>
+                        <a class="btn red" href="{% url 'localidad:localidad_eliminar' localidad.id_localidad %}"><i class="material-icons">delete</i></a>
+			        </td>
+		        </tr>
+		        {% endfor %}
+
+                {% else %}
+		            <h1>No hay registros de localidad</h1>
+		        {% endif %}
+            </tbody>
+        </table>
+    </div>
+</div>
+    <div class="row">
+        <div class="col s12 m12 l12">
+            <ul class="pagination center">
+	            <li>
+		        {% if page_obj.has_previous %}
+       	            <a class="btn blue" href="?page={{ page_obj.previous_page_number }}"><i class="material-icons">navigate_before</i></a>
+		        {% endif %}
+                </li>
+	            <li>
+		        {% if page_obj.has_next %}
+     	            <a class="btn red" href="?page={{ page_obj.next_page_number }}"><i class="material-icons">navigate_next</i></a>
+    	        {% endif %}
+                </li>
+            </ul>
+        </div>
+    </div>
+
+{% endblock%}

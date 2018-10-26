@@ -1,0 +1,33 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col s12 m12 l12">
+        <p><strong>N&uacute;mero de control: </strong>{{ object.nocontrol }} </p>
+        <p><strong>Nombre: </strong>{{ object.nombre }} </p>
+        <p><strong>Apellido Paterno: </strong>{{ object.apellido_paterno }} </p>
+        <p><strong>Apellido Materno: </strong>{{ object.apellido_materno }} </p>
+        <p><strong>Correo Electronico:</strong> {{ alumnos.email }}</p>
+        <p><strong>Telefono: </strong>{{ alumnos.telefono }}</p>
+        <p><strong>Fecha de Nacimiento:</strong> {{ alumnos.fecha_nacimiento }}</p>
+        <p><strong>Sexo:</strong> {{ alumnos.sexo }}</p>
+        <p><strong>Direccion:</strong> {{ alumnos.calle }}</p>
+        <p><strong>Numero Ext.:</strong> {{ alumnos.numero_exterior }}</p>
+        <p><strong>Numero Int.: </strong>{{ alumnos.numero_interior }}</p>
+        <p><strong>Colonia:</strong> {{ alumnos.colonia }}</p>
+        <p><strong>Contrasena:</strong> {{ alumnos.password }}</p>
+        <p><strong>Estatus: </strong>{{ alumnos.estatus }}</p>
+        <p><strong>Carrera:</strong> {{ alumnos.carrera }}</p>
+        <p><strong>Localidad:</strong> {{ alumnos.localidad }}</p>
+        <p><strong>Rol:</strong> {{ alumnos.rol }}</p>
+
+
+
+        <a class= "btn" href="{% url 'alumnos:alumnos_listar' %}">Ok</a>
+        <a class= "btn blue" href="{% url 'alumnos:alumno_editar' object.nocontrol%}"><i class="material-icons">create</i></a>
+        <a class="btn red" href="{% url 'alumnos:alumno_eliminar' object.nocontrol %}"><i class="material-icons">delete</i></a>
+    </div>
+</div>
+
+
+{% endblock %}

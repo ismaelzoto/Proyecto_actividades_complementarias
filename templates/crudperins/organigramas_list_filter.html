@@ -1,0 +1,73 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col s12 m12 l12">
+        <h4>Filtrar por:</h4>
+        <form method="get">
+            <p>
+                Id Organigrama : &nbsp{{ filter.form.id_organigrama }} &nbsp
+                Area : &nbsp {{ filter.form.area }}
+                Nivel : &nbsp {{ filter.form.nivel }}&nbsp;
+                <button class="btn blue" type="submit">Filtrar</button>
+            </p>
+        </form>
+        <table class="striped">
+	        <thead>
+		        <tr>
+                    <td>id organigrama</td>
+                     <td>area</td>
+			        <td>descripcion</td>
+			        <td>area depende</td>
+                    <td>Temario</td>
+			        <td>nivel</td>
+                    <td>tipo area</td>
+                    <td>titular</td>
+
+                </tr>
+            </thead>
+            <tbody>
+            {% if filter.qs %}
+                {% for organigrama in filter.qs %}
+		        <tr>
+			        <td>{{ organigrama.id_organigrama }}</td>
+			        <td>{{ organigrama.area }}</td>
+			        <td>{{ organigrama.descripcion}}</td>
+			        <td>{{ organigrama.area_depende }}</td>
+			        <td>{{ organigrama.nivel }}</td>
+			        <td>{{ organigrama.tipo_area }}</td>
+			        <td>{{ organigrama.titular }}</td>
+
+			        <td>
+				        <a class="btn" href="{% url 'organigramas:organigrama_mostrar' organigrama.id_organigrama %}"><i class="material-icons">zoom_in</i></a>
+                        <a class="btn blue" href="{% url 'organigramas:organigrama_editar' organigrama.id_organigrama %}"><i class="material-icons">create</i></a>
+                        <a class="btn red" href="{% url 'organigramas:organigrama_eliminar' organigrama.id_organigrama %}"><i class="material-icons">delete</i></a>
+			        </td>
+		        </tr>
+		        {% endfor %}
+
+                {% else %}
+		            <h1>No hay registros de organigrama</h1>
+		        {% endif %}
+            </tbody>
+        </table>
+    </div>
+</div>
+    <div class="row">
+        <div class="col s12 m12 l12">
+            <ul class="pagination center">
+	            <li>
+		        {% if page_obj.has_previous %}
+       	            <a class="btn blue" href="?page={{ page_obj.previous_page_number }}"><i class="material-icons">navigate_before</i></a>
+		        {% endif %}
+                </li>
+	            <li>
+		        {% if page_obj.has_next %}
+     	            <a class="btn red" href="?page={{ page_obj.next_page_number }}"><i class="material-icons">navigate_next</i></a>
+    	        {% endif %}
+                </li>
+            </ul>
+        </div>
+    </div>
+
+{% endblock%}

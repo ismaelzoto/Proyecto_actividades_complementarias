@@ -1,0 +1,63 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col s12 m12 l12">
+    <h4>filtrar por </h4>
+    <form method="get">
+        <p>
+            id periodo: {{ filter.form.id_grupo }}
+            nombre corto: {{ filter.form.nombre_grupo }}
+            status: {{ filter.form.capacidad }} &nbsp;&nbsp;
+            <button class = "btn blue" type="submit">Filtrar</button>
+        </p>
+    </form>
+        <table class="striped">
+            <thead>
+            <tr>
+                <td>id periodo</td>
+                <td>nombre corto</td>
+                <td>nombre largo</td>
+                <td>fecha inicial</td>
+            </tr>
+            </thead>
+            <tbody>
+            {% if filter.qs %}
+                {% for grupos in filter.qs %}
+                    <tr>
+                        <td>{{ grupos.id_grupo }}</td>
+                        <td>{{ grupos.nombre_grupo }}</td>
+                        <td>{{ grupos.capacidad }}</td>
+                        <td>{{ grupos.area }}</td>
+                        <td>
+                            <a class="btn brown" href="{% url 'grupos:grupo_mostrar' grupos.id_grupo %}"><i class="material-icons">zoom_in</i></a>
+                            <a class="btn blue" href="{% url 'grupos:grupo_editar' grupos.id_grupo %}"><i class="material-icons">create</i></a>
+                            <a class="btn red" href="{% url 'grupos:grupo_eliminar' grupos.id_grupo %}"><i class="material-icons">delete</i></a>
+                        </td>
+                    </tr>
+                {% endfor %}
+            {% else %}
+                <h1>No hay registros de Grupo</h1>
+            {% endif %}
+            </tbody>
+        </table>
+    </div>
+</div>
+    <div class="row">
+        <div class="col s12 m12 l12">
+            <ul class="pagination center">
+	            <li>
+		        {% if page_obj.has_previous %}
+       	            <a class="btn blue" href="?page={{ page_obj.previous_page_number }}"><i class="material-icons">navigate_before</i></a>
+		        {% endif %}
+                </li>
+	            <li>
+		        {% if page_obj.has_next %}
+     	            <a class="btn red" href="?page={{ page_obj.next_page_number }}"><i class="material-icons">navigate_next</i></a>
+    	        {% endif %}
+                </li>
+            </ul>
+        </div>
+    </div>
+
+{% endblock%}

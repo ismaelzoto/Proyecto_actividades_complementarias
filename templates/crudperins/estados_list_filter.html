@@ -1,0 +1,59 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col s12 m12 l12">
+        <h4>Filtrar por:</h4>
+        <form method="get">
+            <div class="col s4 m4 l4">
+                Nombre de Estado: &nbsp {{ filter.form.nombre_estado }} &nbsp
+                <button class="btn blue" type="submit">Filtrar</button>
+            </div>
+            </p>
+        </form>
+        <table class="striped">
+	        <thead>
+		        <tr>
+			        <th>Clave de Estado</th>
+			        <th>Nombre de Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% if filter.qs %}
+                {% for estado in filter.qs %}
+		        <tr>
+			        <td>{{ estado.id_estado }}</td>
+			        <td>{{ estado.nombre_estado }}</td>
+			        <td>
+				       <a class="btn green" href="{% url 'estados:estado_ver' estado.id_estado %}"><i class="material-icons">zoom_in</i> </a>
+                        <a class="btn blue" href="{% url 'estados:estado_edita' estado.id_estado %}"><i class="material-icons">create</i></a>
+                        <a class="btn red" href="{% url 'estados:estado_borrar' estado.id_estado %}"><i class="material-icons">delete</i></a>
+			        </td>
+		        </tr>
+		        {% endfor %}
+
+                {% else %}
+		            <h1>No hay registro de estado</h1>
+		        {% endif %}
+            </tbody>
+        </table>
+    </div>
+
+    <div class="row">
+        <div class="col s12 m12 l12">
+            <ul class="pagination center">
+	            <li>
+		        {% if page_obj.has_previous %}
+       	            <a class="btn blue" href="?page={{ page_obj.previous_page_number }}"><i class="material-icons">navigate_before</i></a>
+		        {% endif %}
+                </li>
+	            <li>
+		        {% if page_obj.has_next %}
+     	            <a class="btn red" href="?page={{ page_obj.next_page_number }}"><i class="material-icons">navigate_next</i></a>
+    	        {% endif %}
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock%}

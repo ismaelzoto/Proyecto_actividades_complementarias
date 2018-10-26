@@ -1,0 +1,19 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col s12 m12 l12">
+        <p><strong>id organigrama: </strong>{{ object.id_organigrama }} </p>
+        <p><strong>area: </strong>{{ object.area }} </p>
+        <p><strong>descripcion: </strong>{{ object.descripcion }} </p>
+        <p><strong>area depende: </strong>{{ object.area_depende }} </p>
+        <p><strong>nivel: </strong>{{ object.nivel }} </p>
+        <p><strong>tipo area: </strong>{{ object.tipo_area }} </p>
+        <p><strong>titular: </strong>{{ object.titular }} </p>
+
+        <a class= "btn" href="{% url 'organigramas:organigrama_listar' %}">Ok</a>
+        <a class= "btn blue" href="{% url 'organigramas:organigrama_editar' object.id_organigrama%}"><i class="material-icons">create</i></a>
+        <a class="btn red" href="{% url 'organigramas:organigrama_eliminar' object.id_organigrama %}"><i class="material-icons">delete</i></a>
+    </div>
+</div>
+{% endblock %}

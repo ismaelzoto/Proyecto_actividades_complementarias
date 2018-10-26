@@ -1,0 +1,18 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col s12 m12 l12">
+        <p><strong>id grupo: </strong>{{ object.id_grupo }} </p>
+        <p><strong>Nombre grupo: </strong>{{ object.nombre_grupo }} </p>
+        <p><strong>Capacidad: </strong>{{ object.capacidad }} </p>
+        <p><strong>Area: </strong>{{ object.area }} </p>
+
+        <a class= "btn" href="{% url 'grupos:grupo_listar' %}">Ok</a>
+        <a class= "btn blue" href="{% url 'grupos:grupo_editar' object.id_grupo%}"><i class="material-icons">create</i></a>
+        <a class="btn red" href="{% url 'grupos:grupo_eliminar' object.id_grupo %}"><i class="material-icons">delete</i></a>
+    </div>
+</div>
+
+
+{% endblock %}

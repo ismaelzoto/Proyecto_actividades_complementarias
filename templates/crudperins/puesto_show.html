@@ -1,0 +1,18 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col s12 m12 l12">
+        <p><strong>id puesto: </strong>{{ object.id_puesto }} </p>
+        <p><strong>Descripcion: </strong>{{ object.descripcion }} </p>
+        <p><strong>Nivel: </strong>{{ object.nivel }} </p>
+        <p><strong>Tipo: </strong>{{ object.tipo }} </p>
+        <p><strong>Funciones: </strong>{{ object.funciones }} </p>
+
+
+        <a class= "btn" href="{% url 'puestos:puesto_listar' %}">Ok</a>
+        <a class= "btn blue" href="{% url 'puestos:puesto_editar' object.id_puesto%}"><i class="material-icons">create</i></a>
+        <a class="btn red" href="{% url 'puestos:puesto_eliminar' object.id_puesto %}"><i class="material-icons">delete</i></a>
+    </div>
+</div>
+{% endblock %}

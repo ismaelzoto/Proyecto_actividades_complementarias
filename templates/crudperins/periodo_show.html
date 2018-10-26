@@ -1,0 +1,20 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col s12 m12 l12">
+        <p><strong>id periodo: </strong>{{ object.id_periodo }} </p>
+        <p><strong>Nombre corto: </strong>{{ object.nombre_corto }} </p>
+        <p><strong>Nombre largo: </strong>{{ object.nombre_largo }} </p>
+        <p><strong>fecha inicial: </strong>{{ object.fecha_inicio }} </p>
+        <p><strong>Fecha Final: </strong>{{ object.fecha_final }} </p>
+        <p><strong>status: </strong>{{ object.status }} </p>
+
+        <a class= "btn" href="{% url 'periodos:periodos_listar' %}">Ok</a>
+        <a class= "btn blue" href="{% url 'periodos:periodo_editar' object.id_periodo%}"><i class="material-icons">create</i></a>
+        <a class="btn red" href="{% url 'periodos:periodo_eliminar' object.id_periodo %}"><i class="material-icons">delete</i></a>
+    </div>
+</div>
+
+
+{% endblock %}

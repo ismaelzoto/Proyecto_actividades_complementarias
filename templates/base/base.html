@@ -1,0 +1,187 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Actividades</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="{% static 'css/materialize.min.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="{% static 'css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+
+                <!-- Dropdown Structure -->
+                <ul id="dropdown1" class="dropdown-content">
+                    <li><a href="{% url 'periodos:periodo_crear' %}">Registrar/periodos</a></li>
+                    <li><a href="{% url 'periodos:periodos_listar' %}">Listar/periodos</a></li>
+                    <li><a href="{% url 'periodos:periodo_buscar' %}">Buscar/Filtrar/periodos</a></li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li><a href="{% url 'inscripciones:inscrip_Crear' %}">Registrar/inscripciones</a></li>
+                    <li><a href="{% url 'inscripciones:inscrips_Listar' %}">Listar/inscripciones</a></li>
+                    <li><a href="{% url 'inscripciones:inscrip_Buscar' %}">Buscar/Filtrar/inscripciones</a></li>
+                </ul>
+
+                <ul id="dropdown2" class="dropdown-content">
+                    <li><a href="{% url 'alumnos:alumno_crear' %}">Registrar/Alumnos</a></li>
+                    <li><a href="{% url 'alumnos:alumnos_listar' %}">Listar/Alumnos</a></li>
+                    <li><a href="{% url 'alumnos:alumno_buscar' %}">Buscar/Filtrar/Alumnos</a></li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li><a href="{% url 'estados:estado_crea' %}">Registrar/Estados</a></li>
+                    <li><a href="{% url 'estados:estado_lista' %}">Listar/Estados</a></li>
+                    <li><a href="{% url 'estados:estado_busca' %}">Buscar/Filtrar/Estados</a></li>
+                </ul>
+
+                <ul id="dropdown3" class="dropdown-content">
+                    <li><a href="{% url 'usuario:usuario_crear' %}">Registrar</a></li>
+                    <li><a href="{% url 'usuario:usuario_listar' %}">Listar</a></li>
+                    <li><a href="{% url 'usuario:usuario_buscar' %}">Buscar/Filtrar</a></li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li><a href="{% url 'area:area_crea' %}">Registrar</a></li>
+                    <li><a href="{% url 'area:area_lista' %}">Listar</a></li>
+                    <li><a href="{% url 'area:area_busca' %}">Buscar/Filtrar</a></li>
+                </ul>
+
+                <ul id="dropdown4" class="dropdown-content">
+                    <li><a href="{% url 'organigramas:organigrama_crear' %}">Registrar</a></li>
+                    <li><a href="{% url 'organigramas:organigrama_listar' %}">Listar</a></li>
+                    <li><a href="{% url 'organigramas:organigrama_buscar' %}">Buscar/Filtrar</a></li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li><a href="{% url 'puestos:puesto_crear' %}">Registrar</a></li>
+                    <li><a href="{% url 'puestos:puesto_listar' %}">Listar</a></li>
+                    <li><a href="{% url 'puestos:puesto_search' %}">Buscar/Filtrar</a></li>
+                </ul>
+
+                <ul id="dropdown5" class="dropdown-content">
+                    <li><a href="{% url 'grupos:grupo_crear' %}">Registrar</a></li>
+                    <li><a href="{% url 'grupos:grupo_listar' %}">Listar</a></li>
+                    <li><a href="{% url 'grupos:grupo_buscar' %}">Buscar/Filtrar</a></li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li><a href="{% url 'municipios:muni_crear' %}">Registrar</a></li>
+                    <li><a href="{% url 'municipios:muni_listar' %}">Listar</a></li>
+                    <li><a href="{% url 'municipios:muni_buscar' %}">Buscar/Filtrar</a></li>
+                </ul>
+
+                <ul id="dropdown6" class="dropdown-content">
+                    <li><a href="{% url 'actividades:actividad_crear' %}">Registrar</a></li>
+                    <li><a href="{% url 'actividades:actividad_listar' %}">Listar</a></li>
+                    <li><a href="{% url 'actividades:actividad_buscar' %}">Buscar/Filtrar</a></li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li><a href="{% url 'roles:rol_crear' %}">Registrar</a></li>
+                    <li><a href="{% url 'roles:rol_listar' %}">Listar</a></li>
+                    <li><a href="{% url 'roles:rol_search' %}">Buscar/Filtrar</a></li>
+                </ul>
+
+                <ul id="dropdown7" class="dropdown-content">
+                    <li><a href="{% url 'carrera:carrera_crear' %}">Registrar</a></li>
+                    <li><a href="{% url 'carrera:carrera_listar' %}">Listar</a></li>
+                    <li><a href="{% url 'carrera:carrera_buscar' %}">Buscar/Filtrar</a></li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li><a href="{% url 'localidad:localidad_crear' %}">Registrar</a></li>
+                    <li><a href="{% url 'localidad:localidad_listar' %}">Listar</a></li>
+                    <li><a href="{% url 'localidad:localidad_buscar' %}">Buscar/Filtrar</a></li>
+                </ul>
+
+           	</div>
+        </div>
+      </ul>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">Actividades Complementarias</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">with django</h5>
+        </div>
+        <div class="row center">
+                <!-- Dropdown Structure -->
+                                         <!-- Dropdown Trigger -->
+            <a class='btn-large waves-effect waves-light teal lighten-1 dropdown-trigger' href='#' data-target='dropdown2'>Ismael</a>
+            <a class="btn-large waves-effect waves-light teal lighten-1 dropdown-trigger" href="#" data-target="dropdown1">Joan</a>
+            <a class="btn-large waves-effect waves-light teal lighten-1 dropdown-trigger" href="#" data-target="dropdown5">Karyn</a>
+            <a class="btn-large waves-effect waves-light teal lighten-1 dropdown-trigger" href="#" data-target="dropdown6">Litzy</a>
+            <a class="btn-large waves-effect waves-light teal lighten-1 dropdown-trigger" href="#" data-target="dropdown3">Javier</a>
+            <a class="btn-large waves-effect waves-light teal lighten-1 dropdown-trigger" href="#" data-target="dropdown4">Ivan</a>
+            <a class="btn-large waves-effect waves-light teal lighten-1 dropdown-trigger" href="#" data-target="dropdown7">Amayrani</a>
+
+
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="{% static 'images/background1.jpg' %}" alt="Unsplashed background img 1" ></div>
+  </div>
+
+    <div class="parallax"><img src="{% static 'images/background5.jpg' %}" alt="Unsplashed background img 2"></div>
+  </div>
+
+  </div>
+
+	{% block extrastatic %}
+	{% endblock %}
+
+	<link rel="stylesheet" href="{% static 'css/materialize.min.css' %}" type="text/css" media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+	<title>{% block title %}Formulario {% endblock %}</title>
+</head>
+<body>
+<div class="container">
+    {% block navbar %}
+        <div class="row">
+            <div class="col s12 m12 l12">
+
+                    </div>
+                </nav>
+           	</div>
+        </div>
+
+	{% endblock %}
+
+	{% block content %}
+	<h4>	Bloque de contenido		</h4>
+	{% endblock %}
+
+	{% block footer %}
+	{% endblock%}
+<div class="row">
+    <div class="col s12 m12 l12">
+        <footer class="page-footer cyan accent-4">
+            <div class="footer-copyright">
+                &copy; 2018 Ismael Soto Santamaria
+            </div>
+        </footer>
+    </div>
+</div>
+</div>
+
+  <!--  Scripts-->
+	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="{% static 'js/materialize.min.js' %}"></script>
+     <script src="{% static 'js/init.js'%}"></script>
+    <script>
+        $(document).ready(function() {
+            $(".dropdown-trigger").dropdown();
+            $('select').formSelect();
+            $('.collapsible').collapsible();
+            $('.datepicker').datepicker({
+                format: 'yyyy-mm-dd'
+            });
+            $('.button-collapse').sideNav({});
+            $('.materialboxed').materialbox();
+            $(".button-collapse").sideNav();
+            $('.scrollspy').scrollSpy();
+            $('.modal').modal();
+        });
+    </script>
+	{% block extrajs %}
+	{% endblock %}
+
+</body>
+</html>
+
