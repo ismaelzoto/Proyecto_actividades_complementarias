@@ -2,6 +2,8 @@ from django import forms
 from apps.crud_perins.models import periodo, inscripcion, alumnos, estado, carrera, localidad, grupo, municipio, puesto, rol, organigrama, \
     usuario, instructor, area, actividad, coordinador
 
+#------------------------------forms Joan-------------------------------------------
+
 class periodosForm(forms.ModelForm):
     class Meta:
         model = periodo
@@ -67,6 +69,7 @@ class inscripcionForm(forms.ModelForm):
         }
 
 #------------------------------forms ismael-----------------------------------------
+
 class alumnosForm(forms.ModelForm):
     class Meta:
         model = alumnos
@@ -146,6 +149,7 @@ class estadoForm(forms.ModelForm):
         }
 
 #-----------------------------forms javier------------------------------------------
+
 class usuarioForm(forms.ModelForm):
     class Meta:
       model = usuario
@@ -201,6 +205,7 @@ class areaForm(forms.ModelForm):
         }
 
 #-------------------forms ivan-------------------------------
+
 class organigramaForm(forms.ModelForm):
     class Meta:
         model= organigrama
@@ -303,6 +308,7 @@ class municipioForm(forms.ModelForm):
         }
 
 #-----------------------forms litzy-------------------------------
+
 class actividadForm(forms.ModelForm):
     class Meta:
         model = actividad
@@ -365,6 +371,7 @@ class rolForm(forms.ModelForm):
            }
 
 #----------------------form may----------------------------------
+
 class carreraForm(forms.ModelForm):
     class Meta:
         model = carrera
@@ -423,3 +430,57 @@ class localidadForm(forms.ModelForm):
                'municipio': forms.TextInput(attrs={'class': 'form-control'}),
 
            }
+
+#----------------------form nubia--------------------------------
+
+class coordinadorForm(forms.ModelForm):
+    class Meta:
+        model = coordinador
+        fields = [
+        'usuario',
+        'rol',
+        'carrera',
+                ]
+        labels = {
+        'usuario': 'Nombre de Usuario',
+        'rol': 'Rol',
+        'carrera': 'Carrera'
+                }
+
+        widgets = {
+        'usuario': forms.Select(attrs={'class': 'form-control'}),
+        'rol': forms.Select(attrs={'class': 'form-control'}),
+        'carrera': forms.Select(attrs={'class': 'form-control'})
+                }
+
+class instructorForm(forms.ModelForm):
+    class Meta:
+        model = instructor
+        fields = [
+        'id_instructor',
+        'nombre',
+        'apellido_paterno',
+        'apellido_materno',
+        'sexo',
+        'rfc',
+        'formacion'
+                ]
+        labels = {
+        'id_instructor': 'Clave de instructor',
+        'nombre': 'Nombre de instructor',
+        'apellido_paterno': 'Apellido paterno',
+        'apellido_materno': 'Apellido materno',
+        'sexo': 'Sexo',
+        'rfc': 'RFC',
+        'formacion': 'Formacion'
+
+                }
+        widgets = {
+        'id_instructor': forms.TextInput(attrs={'class': 'form-control'}),
+        'nombre': forms.TextInput(attrs={'class': 'form-control'}),
+        'apellido_paterno': forms.TextInput(attrs={'class': 'form-control'}),
+        'apellido_materno': forms.TextInput(attrs={'class': 'form-control'}),
+        'sexo': forms.TextInput(attrs={'class': 'form-control'}),
+        'rfc': forms.TextInput(attrs={'class': 'form-control'}),
+        'formacion': forms.TextInput(attrs={'class': 'form-control'})
+                }

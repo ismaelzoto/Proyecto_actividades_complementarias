@@ -1,0 +1,21 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col s12 m12 l12">
+        <p><strong>Id instructor: </strong>{{ object.id_instructor }} </p>
+        <p><strong>Nombre: </strong>: </strong>{{ object.nombre }} </p>
+        <p><strong>Apellido paterno: </strong>{{ object.apellido_paterno }} </p>
+        <p><strong>Apellido Materno: </strong>{{ object.apellido_materno }} </p>
+        <p><strong>Sexo: </strong>: </strong>{{ object.sexo }} </p>
+        <p><strong>Rfc: </strong>{{ object.rfc }} </p>
+        <p><strong>Formacion: </strong>{{ object.formacion }} </p>
+
+        <a class= "btn" href="{% url 'instructores:instrucciones_listar' %}">Ok</a>
+        <a class= "btn blue" href="{% url 'instructores:instruccion_editar' object.id_instructor%}"><i class="material-icons">create</i></a>
+        <a class="btn red" href="{% url 'instructores:instruccion_eliminar' object.id_instructor %}"><i class="material-icons">delete</i></a>
+    </div>
+</div>
+
+
+{% endblock %}

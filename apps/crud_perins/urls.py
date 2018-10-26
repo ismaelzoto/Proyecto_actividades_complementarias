@@ -19,6 +19,9 @@ from apps.crud_perins.views import actividadCreate, actividadList, actividadDele
 
 from apps.crud_perins.views import carreraCreate, carreraList, carreraDelete, carreraUpdate, carreraShow, searchM, \
     localidadCreate, localidadList, localidadDelete, localidadShow, localidadUpdate, buscarM
+
+from apps.crud_perins.views import coordinadorCreate, coordinadorList, coordinadorDelete, coordinadorUpdate, coordinadorShow, \
+    search_c, instructorCreate, instructorList, instructorDelete, instructorUpdate, instructorShow, search_i
 urlpatterns = [
 #-----------------------------tablas de joan-------------------------------------------
     url(r'^nuevo/', periodoCreate.as_view(), name='periodo_crear'),
@@ -122,4 +125,19 @@ urlpatterns = [
     url(r'^modificasM/(?P<pk>\d+)/$', localidadUpdate.as_view(), name='localidad_editar'),
     url(r'^muestrasM/(?P<pk>\d+)/$', localidadShow.as_view(), name='localidad_mostrar'),
     url(r'^buscasM/$', buscarM, name='localidad_buscar'),
+
+#--------------------url nubia-------------------------------
+  url(r'^nuevoN/', coordinadorCreate.as_view(), name='coordina_crear'),
+    url(r'^listarN/', coordinadorList.as_view(), name='coordinar_listar'),
+    url(r'^eliminarN/(?P<pk>\d+)/$', coordinadorDelete.as_view(), name='coordina_eliminar'),
+    url(r'^editarN/(?P<pk>\d+)/$', coordinadorUpdate.as_view(), name='coordina_editar'),
+    url(r'^mostrarN/(?P<pk>\d+)/$', coordinadorShow.as_view(), name='coordina_mostrar'),
+    url (r'^buscarN/$', search_c, name='coordina_buscar'),
+#aqui inician las urls del crud instructor
+    url(r'^nuevosN/', instructorCreate.as_view(), name='instruccion_crear'),
+    url(r'^listaN/', instructorList.as_view(), name='instrucciones_listar'),
+    url(r'^eliminaN/(?P<pk>\d+)/$', instructorDelete.as_view(), name='instruccion_eliminar'),
+    url(r'^editaN/(?P<pk>\d+)/$', instructorUpdate.as_view(), name='instruccion_editar'),
+    url(r'^verN/(?P<pk>\d+)/$', instructorShow.as_view(), name='instruccion_mostrar'),
+    url(r'^buscaN/$', search_i, name='instruccion_buscar'),
 ]

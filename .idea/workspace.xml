@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7caafdb1-3299-4a3f-b3e8-ed58f0b6fc9d" name="Default Changelist" comment="" />
+    <list default="true" id="7caafdb1-3299-4a3f-b3e8-ed58f0b6fc9d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProyectoActividadesComplemetarias/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoActividadesComplemetarias/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/crud_perins/filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/crud_perins/filters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/crud_perins/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/crud_perins/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/crud_perins/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/crud_perins/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/crud_perins/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/crud_perins/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/base.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,35 +88,177 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1743181165">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="71" />
+          <entry key="py" value="632" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="71" />
+          <entry key="Python" value="632" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/base/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="118" column="69" selection-start-line="118" selection-start-column="69" selection-end-line="118" selection-end-column="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/crud_perins/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="303" column="53" lean-forward="true" selection-start-line="303" selection-start-column="53" selection-end-line="303" selection-end-column="53" />
+            <state relative-caret-position="306">
+              <caret line="401" lean-forward="true" selection-start-line="401" selection-end-line="401" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
+                <element signature="e#861#1014#0" />
+                <element signature="e#1048#1169#0" />
+                <element signature="e#1207#1362#0" />
+                <element signature="e#1400#1527#0" />
+                <element signature="e#1563#1629#0" />
+                <element signature="e#1655#1856#0" />
+                <element signature="e#1916#2081#0" />
+                <element signature="e#2115#2242#0" />
+                <element signature="e#2280#2442#0" />
+                <element signature="e#2480#2616#0" />
+                <element signature="e#2652#2722#0" />
+                <element signature="e#2749#2954#0" />
+                <element signature="e#3081#3233#0" />
+                <element signature="e#3267#3386#0" />
+                <element signature="e#3424#3576#0" />
+                <element signature="e#3614#3739#0" />
+                <element signature="e#3774#3839#0" />
+                <element signature="e#3866#4067#0" />
+                <element signature="e#4142#4290#0" />
+                <element signature="e#4323#4442#0" />
+                <element signature="e#4479#4627#0" />
+                <element signature="e#4664#4786#0" />
+                <element signature="e#4821#4885#0" />
+                <element signature="e#4913#5108#0" />
+                <element signature="e#5232#5385#0" />
+                <element signature="e#5419#5535#0" />
+                <element signature="e#5573#5726#0" />
+                <element signature="e#5764#5890#0" />
+                <element signature="e#5926#5992#0" />
+                <element signature="e#6019#6219#0" />
+                <element signature="e#6284#6420#0" />
+                <element signature="e#6451#6563#0" />
+                <element signature="e#6598#6734#0" />
+                <element signature="e#6769#6881#0" />
+                <element signature="e#6914#6977#0" />
+                <element signature="e#7005#7187#0" />
+                <element signature="e#7281#7454#0" />
+                <element signature="e#7493#7605#0" />
+                <element signature="e#7648#7821#0" />
+                <element signature="e#7863#8005#0" />
+                <element signature="e#8046#8120#0" />
+                <element signature="e#8148#8378#0" />
+                <element signature="e#8416#8564#0" />
+                <element signature="e#8598#8695#0" />
+                <element signature="e#8733#8881#0" />
+                <element signature="e#8919#9041#0" />
+                <element signature="e#9077#9141#0" />
+                <element signature="e#9170#9364#0" />
+                <element signature="e#9479#9622#0" />
+                <element signature="e#9655#9770#0" />
+                <element signature="e#9807#9950#0" />
+                <element signature="e#9987#10105#0" />
+                <element signature="e#10140#10202#0" />
+                <element signature="e#10237#10424#0" />
+                <element signature="e#10631#10784#0" />
+                <element signature="e#10823#10945#0" />
+                <element signature="e#10981#11134#0" />
+                <element signature="e#11170#11294#0" />
+                <element signature="e#11328#11393#0" />
+                <element signature="e#11510#11700#0" />
+                <element signature="e#11802#11966#0" />
+                <element signature="e#12003#12103#0" />
+                <element signature="e#12144#12308#0" />
+                <element signature="e#12349#12484#0" />
+                <element signature="e#12523#12593#0" />
+                <element signature="e#12622#12839#0" />
+                <element signature="e#12875#13009#0" />
+                <element signature="e#13040#13128#0" />
+                <element signature="e#13163#13297#0" />
+                <element signature="e#13332#13443#0" />
+                <element signature="e#13476#13534#0" />
+                <element signature="e#13564#13737#0" />
+                <element signature="e#13842#13994#0" />
+                <element signature="e#14029#14132#0" />
+                <element signature="e#14171#14323#0" />
+                <element signature="e#14362#14487#0" />
+                <element signature="e#14524#14590#0" />
+                <element signature="e#14619#14820#0" />
+                <element signature="e#14862#15024#0" />
+                <element signature="e#15061#15167#0" />
+                <element signature="e#15208#15370#0" />
+                <element signature="e#15411#15544#0" />
+                <element signature="e#15583#15653#0" />
+                <element signature="e#15682#15897#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/crudperins/muni_list_filter.html">
+        <entry file="file://$PROJECT_DIR$/apps/crud_perins/filters.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="36" column="49" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
+            <state relative-caret-position="154">
+              <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+                <element signature="e#269#336#0" />
+                <element signature="e#409#462#0" />
+                <element signature="e#581#668#0" />
+                <element signature="e#720#789#0" />
+                <element signature="e#918#989#0" />
+                <element signature="e#1039#1116#0" />
+                <element signature="e#1218#1310#0" />
+                <element signature="e#1362#1436#0" />
+                <element signature="e#1526#1589#0" />
+                <element signature="e#1644#1715#0" />
+                <element signature="e#1818#1891#0" />
+                <element signature="e#1940#2013#0" />
+                <element signature="e#2118#2206#0" />
+                <element signature="e#2263#2354#0" />
+                <element signature="e#2468#2538#0" />
+                <element signature="e#2595#2661#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/crud_perins/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="526">
+              <caret line="119" column="36" lean-forward="true" selection-start-line="119" selection-start-column="36" selection-end-line="119" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="424">
+              <caret line="94" column="65" selection-start-line="94" selection-start-column="65" selection-end-line="94" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -115,17 +266,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProyectoActividadesComplemetarias/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
+            <state relative-caret-position="526">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apps/crud_perins/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="93" column="49" lean-forward="true" selection-start-line="93" selection-start-column="49" selection-end-line="93" selection-end-column="49" />
+            <state relative-caret-position="169">
+              <caret line="126" column="57" lean-forward="true" selection-start-line="126" selection-start-column="57" selection-end-line="126" selection-end-column="57" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -145,15 +296,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/crud_perins/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1666">
-              <caret line="424" column="12" selection-start-line="424" selection-start-column="12" selection-end-line="424" selection-end-column="12" />
+            <state>
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
+                <element signature="e#262#1261#0" />
                 <element signature="e#282#1261#0" />
+                <element signature="e#1307#2534#0" />
                 <element signature="e#1327#2534#0" />
+                <element signature="e#2661#5123#0" />
                 <element signature="e#2681#5123#0" />
+                <element signature="e#5164#5588#0" />
                 <element signature="e#5184#5588#0" />
+                <element signature="e#5715#6973#0" />
                 <element signature="e#5733#6973#0" />
+                <element signature="e#7012#7418#0" />
                 <element signature="e#7032#7418#0" />
                 <element signature="e#7526#8616#0" />
                 <element signature="e#8657#9442#0" />
@@ -161,12 +317,20 @@
                 <element signature="e#10242#10806#0" />
                 <element signature="e#10917#12465#0" />
                 <element signature="e#12503#13062#0" />
+                <element signature="e#13170#14557#0" />
+                <element signature="e#14601#15191#0" />
+                <element signature="e#15310#15939#0" />
+                <element signature="e#15992#17343#0" />
+                <marker date="1540592068279" expanded="true" signature="15940:15945" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -177,10 +341,6 @@
         <option value="$PROJECT_DIR$/templates/crudperins/actividad_show.html" />
         <option value="$PROJECT_DIR$/templates/crudperins/actividad_list.html" />
         <option value="$PROJECT_DIR$/apps/crud_perins/models.py" />
-        <option value="$PROJECT_DIR$/apps/crud_perins/forms.py" />
-        <option value="$PROJECT_DIR$/apps/crud_perins/urls.py" />
-        <option value="$PROJECT_DIR$/apps/crud_perins/filters.py" />
-        <option value="$PROJECT_DIR$/ProyectoActividadesComplemetarias/urls.py" />
         <option value="$PROJECT_DIR$/templates/crudperins/periodo_list.html" />
         <option value="$PROJECT_DIR$/templates/crudperins/periodo_list_filter.html" />
         <option value="$PROJECT_DIR$/templates/crudperins/grupo_list.html" />
@@ -193,9 +353,13 @@
         <option value="$PROJECT_DIR$/templates/crudperins/organigramas_list_filter.html" />
         <option value="$PROJECT_DIR$/templates/crudperins/puesto_list.html" />
         <option value="$PROJECT_DIR$/templates/crudperins/puesto_list_filter.html" />
-        <option value="$PROJECT_DIR$/apps/crud_perins/views.py" />
         <option value="$PROJECT_DIR$/templates/crudperins/usuario_list.html" />
         <option value="$PROJECT_DIR$/templates/crudperins/area_list.html" />
+        <option value="$PROJECT_DIR$/apps/crud_perins/forms.py" />
+        <option value="$PROJECT_DIR$/apps/crud_perins/filters.py" />
+        <option value="$PROJECT_DIR$/ProyectoActividadesComplemetarias/urls.py" />
+        <option value="$PROJECT_DIR$/apps/crud_perins/urls.py" />
+        <option value="$PROJECT_DIR$/apps/crud_perins/views.py" />
         <option value="$PROJECT_DIR$/templates/base/base.html" />
       </list>
     </option>
@@ -207,9 +371,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="710" />
+    <option name="x" value="-7" />
+    <option name="width" value="777" />
+    <option name="height" value="743" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -277,7 +441,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Nueva carpeta (3)/actividades" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -338,15 +502,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20121029" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18835099" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32569557" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32569557" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -450,52 +614,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/crudperins/carrera_delete.html">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/crud_perins/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/crud_perins/filters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1343">
-          <caret line="81" column="53" selection-start-line="81" selection-start-column="53" selection-end-line="81" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/crud_perins/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1666">
-          <caret line="424" column="12" selection-start-line="424" selection-start-column="12" selection-end-line="424" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-            <element signature="e#282#1261#0" />
-            <element signature="e#1327#2534#0" />
-            <element signature="e#2681#5123#0" />
-            <element signature="e#5184#5588#0" />
-            <element signature="e#5733#6973#0" />
-            <element signature="e#7032#7418#0" />
-            <element signature="e#7526#8616#0" />
-            <element signature="e#8657#9442#0" />
-            <element signature="e#9530#10198#0" />
-            <element signature="e#10242#10806#0" />
-            <element signature="e#10917#12465#0" />
-            <element signature="e#12503#13062#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProyectoActividadesComplemetarias/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="83" column="28" selection-start-line="83" selection-start-column="28" selection-end-line="83" selection-end-column="28" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/crudperins/actividad_list.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -651,16 +769,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/crud_perins/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="93" column="49" lean-forward="true" selection-start-line="93" selection-start-column="49" selection-end-line="93" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/crudperins/usuario_list_filter.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="327">
@@ -696,34 +804,200 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/crud_perins/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="303" column="53" lean-forward="true" selection-start-line="303" selection-start-column="53" selection-end-line="303" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/crudperins/muni_list_filter.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
+        <state relative-caret-position="612">
           <caret line="36" column="49" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProyectoActividadesComplemetarias/urls.py">
+    <entry file="file://$PROJECT_DIR$/apps/crud_perins/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
+        <state relative-caret-position="526">
+          <caret line="119" column="36" lean-forward="true" selection-start-line="119" selection-start-column="36" selection-end-line="119" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/crud_perins/filters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#269#336#0" />
+            <element signature="e#409#462#0" />
+            <element signature="e#581#668#0" />
+            <element signature="e#720#789#0" />
+            <element signature="e#918#989#0" />
+            <element signature="e#1039#1116#0" />
+            <element signature="e#1218#1310#0" />
+            <element signature="e#1362#1436#0" />
+            <element signature="e#1526#1589#0" />
+            <element signature="e#1644#1715#0" />
+            <element signature="e#1818#1891#0" />
+            <element signature="e#1940#2013#0" />
+            <element signature="e#2118#2206#0" />
+            <element signature="e#2263#2354#0" />
+            <element signature="e#2468#2538#0" />
+            <element signature="e#2595#2661#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProyectoActividadesComplemetarias/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="83" column="28" selection-start-line="83" selection-start-column="28" selection-end-line="83" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/crud_perins/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+            <element signature="e#262#1261#0" />
+            <element signature="e#282#1261#0" />
+            <element signature="e#1307#2534#0" />
+            <element signature="e#1327#2534#0" />
+            <element signature="e#2661#5123#0" />
+            <element signature="e#2681#5123#0" />
+            <element signature="e#5164#5588#0" />
+            <element signature="e#5184#5588#0" />
+            <element signature="e#5715#6973#0" />
+            <element signature="e#5733#6973#0" />
+            <element signature="e#7012#7418#0" />
+            <element signature="e#7032#7418#0" />
+            <element signature="e#7526#8616#0" />
+            <element signature="e#8657#9442#0" />
+            <element signature="e#9530#10198#0" />
+            <element signature="e#10242#10806#0" />
+            <element signature="e#10917#12465#0" />
+            <element signature="e#12503#13062#0" />
+            <element signature="e#13170#14557#0" />
+            <element signature="e#14601#15191#0" />
+            <element signature="e#15310#15939#0" />
+            <element signature="e#15992#17343#0" />
+            <marker date="1540592068279" expanded="true" signature="15940:15945" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/crud_perins/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="401" lean-forward="true" selection-start-line="401" selection-end-line="401" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#861#1014#0" />
+            <element signature="e#1048#1169#0" />
+            <element signature="e#1207#1362#0" />
+            <element signature="e#1400#1527#0" />
+            <element signature="e#1563#1629#0" />
+            <element signature="e#1655#1856#0" />
+            <element signature="e#1916#2081#0" />
+            <element signature="e#2115#2242#0" />
+            <element signature="e#2280#2442#0" />
+            <element signature="e#2480#2616#0" />
+            <element signature="e#2652#2722#0" />
+            <element signature="e#2749#2954#0" />
+            <element signature="e#3081#3233#0" />
+            <element signature="e#3267#3386#0" />
+            <element signature="e#3424#3576#0" />
+            <element signature="e#3614#3739#0" />
+            <element signature="e#3774#3839#0" />
+            <element signature="e#3866#4067#0" />
+            <element signature="e#4142#4290#0" />
+            <element signature="e#4323#4442#0" />
+            <element signature="e#4479#4627#0" />
+            <element signature="e#4664#4786#0" />
+            <element signature="e#4821#4885#0" />
+            <element signature="e#4913#5108#0" />
+            <element signature="e#5232#5385#0" />
+            <element signature="e#5419#5535#0" />
+            <element signature="e#5573#5726#0" />
+            <element signature="e#5764#5890#0" />
+            <element signature="e#5926#5992#0" />
+            <element signature="e#6019#6219#0" />
+            <element signature="e#6284#6420#0" />
+            <element signature="e#6451#6563#0" />
+            <element signature="e#6598#6734#0" />
+            <element signature="e#6769#6881#0" />
+            <element signature="e#6914#6977#0" />
+            <element signature="e#7005#7187#0" />
+            <element signature="e#7281#7454#0" />
+            <element signature="e#7493#7605#0" />
+            <element signature="e#7648#7821#0" />
+            <element signature="e#7863#8005#0" />
+            <element signature="e#8046#8120#0" />
+            <element signature="e#8148#8378#0" />
+            <element signature="e#8416#8564#0" />
+            <element signature="e#8598#8695#0" />
+            <element signature="e#8733#8881#0" />
+            <element signature="e#8919#9041#0" />
+            <element signature="e#9077#9141#0" />
+            <element signature="e#9170#9364#0" />
+            <element signature="e#9479#9622#0" />
+            <element signature="e#9655#9770#0" />
+            <element signature="e#9807#9950#0" />
+            <element signature="e#9987#10105#0" />
+            <element signature="e#10140#10202#0" />
+            <element signature="e#10237#10424#0" />
+            <element signature="e#10631#10784#0" />
+            <element signature="e#10823#10945#0" />
+            <element signature="e#10981#11134#0" />
+            <element signature="e#11170#11294#0" />
+            <element signature="e#11328#11393#0" />
+            <element signature="e#11510#11700#0" />
+            <element signature="e#11802#11966#0" />
+            <element signature="e#12003#12103#0" />
+            <element signature="e#12144#12308#0" />
+            <element signature="e#12349#12484#0" />
+            <element signature="e#12523#12593#0" />
+            <element signature="e#12622#12839#0" />
+            <element signature="e#12875#13009#0" />
+            <element signature="e#13040#13128#0" />
+            <element signature="e#13163#13297#0" />
+            <element signature="e#13332#13443#0" />
+            <element signature="e#13476#13534#0" />
+            <element signature="e#13564#13737#0" />
+            <element signature="e#13842#13994#0" />
+            <element signature="e#14029#14132#0" />
+            <element signature="e#14171#14323#0" />
+            <element signature="e#14362#14487#0" />
+            <element signature="e#14524#14590#0" />
+            <element signature="e#14619#14820#0" />
+            <element signature="e#14862#15024#0" />
+            <element signature="e#15061#15167#0" />
+            <element signature="e#15208#15370#0" />
+            <element signature="e#15411#15544#0" />
+            <element signature="e#15583#15653#0" />
+            <element signature="e#15682#15897#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="118" column="69" selection-start-line="118" selection-start-column="69" selection-end-line="118" selection-end-column="69" />
+        <state relative-caret-position="424">
+          <caret line="94" column="65" selection-start-line="94" selection-start-column="65" selection-end-line="94" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProyectoActividadesComplemetarias/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/crud_perins/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="126" column="57" lean-forward="true" selection-start-line="126" selection-start-column="57" selection-end-line="126" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

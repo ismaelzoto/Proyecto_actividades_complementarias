@@ -26,6 +26,10 @@ urlpatterns = [
 
 #---------------url may---------------------------------------
     url(r'^carrera/', include(('apps.crud_perins.urls', 'apps'), namespace='carrera')),
-    url(r'^localidad/', include(('apps.crud_perins.urls', 'apps'), namespace='localidad'))
+    url(r'^localidad/', include(('apps.crud_perins.urls', 'apps'), namespace='localidad')),
+
+#---------------url nubia--------------------------------------
+    url(r'^coordinadores/', include(('apps.crud_perins.urls', 'apps'), namespace='coordinadores')),
+    url(r'^instructores/', include(('apps.crud_perins.urls', 'apps'), namespace='instructores'))
 
 ]

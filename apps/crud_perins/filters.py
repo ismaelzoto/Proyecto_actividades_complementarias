@@ -1,7 +1,7 @@
 import django_filters
 from apps.crud_perins.models import periodo, inscripcion, alumnos, estado, carrera, localidad, grupo, municipio, puesto, rol, organigrama, \
     usuario, instructor, area, actividad, coordinador
-
+#----------------------filters joan---------------------------
 class periodoFilter(django_filters.FilterSet):
     class Meta:
         model = periodo
@@ -74,9 +74,18 @@ class carreraFilter(django_filters.FilterSet):
         model = carrera
         fields = ['clave_oficial', 'nombre_carrera']
 
-
-
 class localidadFilter(django_filters.FilterSet):
     class Meta:
         model = localidad
         fields = ['id_localidad', 'nombre_localidad']
+
+#------------------filters nubia----------------------
+class coordinadorFilter(django_filters.FilterSet):
+    class Meta:
+        model = coordinador
+        fields = ['usuario']
+
+class instructorFilter(django_filters.FilterSet):
+    class Meta:
+        model = instructor
+        fields = ['nombre']
