@@ -19,9 +19,9 @@
 			        <td>{{ localidad.nombre_localidad }}</td>
 			        <td>{{ localidad.municipio }}</td>
 			        <td>
-				        <a class="btn" href="{% url 'localidad:localidad_mostrar' localidad.nombre_localidad %}"><i class="material-icons">zoom_in</i></a>
-                        <a class="btn blue" href="{% url 'localidad:localidad_editar' localidad.nombre_localidad %}"><i class="material-icons">create</i></a>
-                        <a class="btn red" href="{% url 'localidad:localidad_eliminar' localidad.nombre_localidada %}"><i class="material-icons">delete</i></a>
+				        <a class="btn" href="{% url 'localidad:localidad_mostrar' localidad.id_localidad %}"><i class="material-icons">zoom_in</i></a>
+                        <a class="btn blue" href="{% url 'localidad:localidad_editar' localidad.id_localidad %}"><i class="material-icons">create</i></a>
+                        <a class="btn red" href="{% url 'localidad:localidad_eliminar' localidad.id_localidad %}"><i class="material-icons">delete</i></a>
 			        </td>
 		        </tr>
 		        {% endfor %}

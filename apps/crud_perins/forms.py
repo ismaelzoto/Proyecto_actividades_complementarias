@@ -154,24 +154,22 @@ class usuarioForm(forms.ModelForm):
     class Meta:
       model = usuario
       fields = [
-          'clave',
-          'nombre',
-          'apellido_paterno',
-          'apellido_materno',
-          'organigrama',
-          'password',
-          'estatus',
-          'rol'
-
+        'clave',
+        'nombre',
+        'apellido_paterno',
+        'apellido_materno',
+        'password' ,
+        'estatus',
+        'rol',
+        'organigrama'
       ]
       labels = {
           'clave': 'Clave',
           'nombre': 'Nombres',
           'apellido_paterno': 'Apellido Paterno',
           'apellido_materno': 'Apellido Materno',
-          'organigrama': 'Organigrama',
-          'password': 'Passwords',
-          'estatus': 'Estatu',
+          'password': 'Password',
+          'estatus': 'Estatus',
           'rol':'Rol',
           'organigrama':'Organigrama'
       }
@@ -181,9 +179,8 @@ class usuarioForm(forms.ModelForm):
           'nombre':forms.TextInput(attrs={'class':'form-control'}),
           'apellido_paterno':forms.TextInput(attrs={'class':'form-control'}),
           'apellido_materno':forms.TextInput(attrs={'class':'form-control'}),
-          'organigrama':forms.TextInput(attrs={'class':'datepicker'}),
           'password': forms.PasswordInput(attrs={'class': 'form-control'}),
-          'estatus':forms.Select(attrs={'class':'form-control'}),
+          'estatus':forms.TextInput(attrs={'class':'form-control'}),
           'rol': forms.Select(attrs={'class': 'form-control'}),
           'organigrama': forms.Select(attrs={'class': 'form-control'}),
       }
@@ -400,15 +397,15 @@ class carreraForm(forms.ModelForm):
         }
 
         widgets = {
-            'clave_oficial': forms.TextInput(attrs={'class': 'form-control'}),
-            'nombre_carrera': forms.TextInput(attrs={'class': 'form-control'}),
-            'reticula': forms.TextInput(attrs={'class': 'form-control'}),
-            'nivel_escolar': forms.TextInput(attrs={'class': 'form-control'}),
-            'nombre_reducido': forms.TextInput(attrs={'class': 'form-control'}),
-            'carga_maxima': forms.TextInput(attrs={'class': 'form-control'}),
-            'creditos_totales': forms.Select(attrs={'class': 'form-control'}),
-            'nivel': forms.Select(attrs={'class': 'form-control'}),
-            'modalidad': forms.Select(attrs={'class': 'form-control'}),
+            'clave_oficial': forms.TextInput(attrs={'class':'form-control'}),
+            'nombre_carrera': forms.TextInput(attrs={'class':'form-control'}),
+            'reticula': forms.TextInput(attrs={'class':'form-control'}),
+            'nivel_escolar': forms.TextInput(attrs={'class':'form-control'}),
+            'nombre_reducido': forms.TextInput(attrs={'class':'form-control'}),
+            'carga_maxima': forms.TextInput(attrs={'class':'form-control'}),
+            'creditos_totales': forms.TextInput(attrs={'class':'form-control'}),
+            'nivel': forms.TextInput(attrs={'class':'form-control'}),
+            'modalidad': forms.TextInput(attrs={'class':'form-control'}),
          }
 
 class localidadForm(forms.ModelForm):
@@ -420,14 +417,14 @@ class localidadForm(forms.ModelForm):
         'municipio'
         ]
         labels = {
-            'id_localidad': 'Clave de localidad',
-            'nombre_localidad': 'Nombre de la localidad',
-            'municipio': 'Municipio'
+        'id_localidad': 'Clave de localidad',
+        'nombre_localidad': 'Nombre de la localidad',
+        'municipio': 'Municipio'
         }
         widgets = {
-               'id_localidad': forms.TextInput(attrs={'class': 'form-control'}),
-               'nombre_localidad': forms.TextInput(attrs={'class': 'form-control'}),
-               'municipio': forms.TextInput(attrs={'class': 'form-control'}),
+        'id_localidad': forms.TextInput(attrs={'class':'form-control'}),
+        'nombre_localidad': forms.TextInput(attrs={'class':'form-control'}),
+        'municipio': forms.Select(attrs={'class':'form-control'}),
 
            }
 
@@ -474,7 +471,7 @@ class instructorForm(forms.ModelForm):
         'rfc': 'RFC',
         'formacion': 'Formacion'
 
-                }
+        }
         widgets = {
         'id_instructor': forms.TextInput(attrs={'class': 'form-control'}),
         'nombre': forms.TextInput(attrs={'class': 'form-control'}),
@@ -483,4 +480,4 @@ class instructorForm(forms.ModelForm):
         'sexo': forms.TextInput(attrs={'class': 'form-control'}),
         'rfc': forms.TextInput(attrs={'class': 'form-control'}),
         'formacion': forms.TextInput(attrs={'class': 'form-control'})
-                }
+         }

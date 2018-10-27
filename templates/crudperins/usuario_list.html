@@ -1,46 +1,20 @@
 {% extends 'base/base.html' %}
 
 {% block content %}
-<div class="row">
-    <div class="col s12 m6 l4">
 
-{% if object_list %}
-		        {% for usuario in object_list %}
-<div class="card orange darken-1">
-        <div class="card-content white-text">
-          <span class="card-title">{{ usuario.clave }} </span>
-          <p>{{ usuario.id_rol }} {{ usuario.apellido_paterno }} {{ usuario.apellido_materno }}</p>
-            <p>{{ usuario.organigrama }} </p>
-			<p>{{ usuario.password }}</p>
-            <p>{{ usuario.estatus }}</p>
-        </div>
-        <div class="card-action">
-          <a class="btn btn-primary" href="#">Ver</a>
-				        <a class="btn btn-primary" href="*">Editar</a>
-				        <a class="btn btn-danger" href="*">Eliminar</a>
-        </div>
-      </div>
-    {% endfor %}
-
-                {% else %}
-		            <h1>No hay registros de usuarios</h1>
-		        {% endif %}
-
-    </div>
-</div>
     <div class="row">
     <div class="col s12 m12 l12">
         <table class="striped">
 	        <thead>
 		        <tr>
 			        <td>clave</td>
-			        <td>id_rol</td>
                     <td>nombre</td>
 			        <td>apellido Paterno</td>
                     <td>apellido Materno</td>
-			        <td>organigrama</td>
                     <td>password</td>
-                    <td>estratus</td>
+                    <td>estatus</td>
+                    <td>Rol</td>
+                    <td>organigrama</td>
                 </tr>
             </thead>
             <tbody>
@@ -48,24 +22,25 @@
 		        {% for usuario in object_list %}
 		        <tr>
 			        <td>{{ usuario.clave }}</td>
-			        <td>{{ usuario.id_rol }}</td>
                     <td>{{ usuario.nombre }}</td>
 			        <td>{{ usuario.apellido_paterno }}</td>
 			        <td>{{ usuario.apellido_materno }}</td>
-			        <td>{{ usuario.organigrama }}</td>
 			        <td>{{ usuario.password }}</td>
                     <td>{{ usuario.estatus }}</td>
+                    <td>{{ usuario.rol }}</td>
+                    <td>{{ usuario.organigrama }}</td>
+
 			        <td>
-                        <a class="btn red" href="{% url 'usuario:usuario_mostrar' usuario.nombre %}"><i class="material-icons">zoom_in</i></a>
-                        <a class="btn yellow" href="{% url 'usuario:usuario_editar' usuario.nombre %}"><i class="material-icons">create</i></a>
-                        <a class="btn blue" href="{% url 'usuario:usuario_eliminar' usuario.nombre %}"><i class="material-icons">delete</i></a>
+                        <a class="btn red" href="{% url 'usuario:usuario_mostrar' usuario.clave %}"><i class="material-icons">zoom_in</i></a>
+                        <a class="btn yellow" href="{% url 'usuario:usuario_editar' usuario.clave %}"><i class="material-icons">create</i></a>
+                        <a class="btn blue" href="{% url 'usuario:usuario_eliminar' usuario.clave %}"><i class="material-icons">delete</i></a>
 
 			        </td>
 		        </tr>
 		        {% endfor %}
 
                 {% else %}
-		            <h1></h1>
+		            <h1>No hay registro de usuarios</h1>
 		        {% endif %}
             </tbody>
         </table>

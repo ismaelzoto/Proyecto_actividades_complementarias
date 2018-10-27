@@ -42,7 +42,7 @@ class localidad(models.Model):
     # aqui se crea el metodo __str__ para mostrar las carreras en el formulario de alumnos
 
     def __str__(self):
-        return '{}'.format(self.id_localidad)
+        return '{}'.format(self.nombre_localidad)
 
 
 class rol(models.Model):

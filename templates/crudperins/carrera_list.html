@@ -31,9 +31,9 @@
                     <td>{{ carrera.nivel }}</td>
                     <td>{{ carrera.modalidad }}</td>
 			        <td>
-				        <a class="btn" href="{% url 'carrera:carrera_mostrar' carrera.nombre %}"><i class="material-icons">zoom_in</i></a>
-                        <a class="btn blue" href="{% url 'carrera:carrera_editar' carrera.nombre %}"><i class="material-icons">create</i></a>
-                        <a class="btn red" href="{% url 'carrera:carrera_eliminar' carrera.nombre %}"><i class="material-icons">delete</i></a>
+				        <a class="btn" href="{% url 'carrera:carrera_mostrar' carrera.clave_oficial %}"><i class="material-icons">zoom_in</i></a>
+                        <a class="btn blue" href="{% url 'carrera:carrera_editar' carrera.clave_oficial %}"><i class="material-icons">create</i></a>
+                        <a class="btn red" href="{% url 'carrera:carrera_eliminar' carrera.clave_oficial %}"><i class="material-icons">delete</i></a>
 			        </td>
 		        </tr>
 		        {% endfor %}

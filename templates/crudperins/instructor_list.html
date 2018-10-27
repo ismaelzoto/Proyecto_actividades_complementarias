@@ -27,9 +27,9 @@
 			        <td>{{ instructor.rfc }}</td>
 			        <td>{{ instructor.formacion }}</td>
 			        <td>
-				        <a class="btn" href="{% url 'instructores:instruccion_mostrar' instructor.id_instrucctor %}"><i class="material-icons">zoom_in</i></a>
-                        <a class="btn blue" href="{% url 'instructores:instruccion_editar' instructor.id_instrucctor %}"><i class="material-icons">create</i></a>
-                        <a class="btn red" href="{% url 'instructores:instruccion_eliminar' instructor.id_instrucctor %}"><i class="material-icons">delete</i></a>
+				        <a class="btn" href="{% url 'instructores:instruccion_mostrar' instructor.id_instructor %}"><i class="material-icons">zoom_in</i></a>
+                        <a class="btn blue" href="{% url 'instructores:instruccion_editar' instructor.id_instructor %}"><i class="material-icons">create</i></a>
+                        <a class="btn red" href="{% url 'instructores:instruccion_eliminar' instructor.id_instructor %}"><i class="material-icons">delete</i></a>
 			        </td>
 		        </tr>
 		        {% endfor %}

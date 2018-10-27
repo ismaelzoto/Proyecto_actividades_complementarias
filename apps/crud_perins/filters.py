@@ -50,12 +50,12 @@ class puestoFilter(django_filters.FilterSet):
 class grupoFilter(django_filters.FilterSet):
     class Meta:
         model = grupo
-        fields = ['id_grupo']
+        fields = ['id_grupo','nombre_grupo']
 
 class municipioFilter(django_filters.FilterSet):
     class Meta:
         model = municipio
-        fields = ['id_municipio']
+        fields = ['id_municipio','nombre_municipio']
 
 #---------------------filters litzy------------
 class actividadFilter(django_filters.FilterSet):

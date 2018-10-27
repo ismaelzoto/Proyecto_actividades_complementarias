@@ -7,7 +7,7 @@
 	            {% csrf_token %}
 	            {{ form.as_p }}
 	            <button class="btn" type="submit">Guardar<i class="material-icons right">send</i></button>
-	            <a class= "btn" href="{% url 'usuario:usuario_listar' %}">cancelar%<i class="material-icons right">cancel</i></a>
+	            <a class= "btn" href="{% url 'usuario:usuario_listar' %}">cancelar<i class="material-icons right">cancel</i></a>
             </form>
         </div>
     </div>

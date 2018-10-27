@@ -24,8 +24,8 @@
             </tr>
             </thead>
             <tbody>
-            {% if object_list %}
-                {% for inscripciones in object_list %}
+            {% if filter.qs %}
+                {% for inscripciones in filter.qs %}
                     <tr>
                         <td>{{ inscripciones.calificacion }}</td>
                         <td>{{ inscripciones.periodo }}</td>

@@ -14,8 +14,8 @@
         <p><strong>Modalidad: </strong>{{ object.modalidad }} </p>
 
         <a class= "btn" href="{% url 'carrera:carrera_listar' %}">Ok</a>
-        <a class= "btn blue" href="{% url 'carrera:carrera_editar' object.nombre %}"><i class="material-icons">create</i></a>
-        <a class="btn red" href="{% url 'carrera:carrera_eliminar' object.nombre %}"><i class="material-icons">delete</i></a>
+        <a class= "btn blue" href="{% url 'carrera:carrera_editar' object.clave_oficial %}"><i class="material-icons">create</i></a>
+        <a class="btn red" href="{% url 'carrera:carrera_eliminar' object.clave_oficial %}"><i class="material-icons">delete</i></a>
     </div>
 </div>
 

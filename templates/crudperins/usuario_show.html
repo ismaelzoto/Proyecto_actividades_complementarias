@@ -12,8 +12,8 @@
         <p><strong>password: </strong>{{ object.password }} </p>
 
         <a class= "btn" href="{% url 'usuario:usuario_listar' %}">Ok</a>
-        <a class= "btn blue" href="{% url 'usuario:usuario_editar' object.password%}"><i class="material-icons">create</i></a>
-        <a class="btn red" href="{% url 'usuario:usuario_eliminar' object.password %}"><i class="material-icons">delete</i></a>
+        <a class= "btn blue" href="{% url 'usuario:usuario_editar' object.clave%}"><i class="material-icons">create</i></a>
+        <a class="btn red" href="{% url 'usuario:usuario_eliminar' object.clave %}"><i class="material-icons">delete</i></a>
     </div>
 </div>
 

@@ -6,19 +6,18 @@
     <h4>filtrar por </h4>
     <form method="get">
         <p>
-            id periodo: {{ filter.form.id_grupo }}
-            nombre corto: {{ filter.form.nombre_grupo }}
-            status: {{ filter.form.capacidad }} &nbsp;&nbsp;
+            Id Grupo: &nbsp{{ filter.form.id_grupo }}&nbsp
+            Nombre grupo: &nbsp{{ filter.form.nombre_grupo }}&nbsp&nbsp;&nbsp;
             <button class = "btn blue" type="submit">Filtrar</button>
         </p>
     </form>
         <table class="striped">
             <thead>
             <tr>
-                <td>id periodo</td>
-                <td>nombre corto</td>
-                <td>nombre largo</td>
-                <td>fecha inicial</td>
+                <td>Id grupo</td>
+                <td>Nombre grupo</td>
+                <td>Capacidad</td>
+                <td>Area</td>
             </tr>
             </thead>
             <tbody>

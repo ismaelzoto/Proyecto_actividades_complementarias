@@ -15,30 +15,31 @@
 	        <thead>
 		        <tr>
 			        <td>clave</td>
-			        <td>id_rol</td>
                     <td>nombre</td>
 			        <td>apellido Paterno</td>
                     <td>apellido Materno</td>
-			        <td>organigrama</td>
                     <td>password</td>
                     <td>estatus</td>
+                    <td>Rol</td>
+                    <td>Organigrama</td>
                 </tr>
             </thead>
             <tbody>
             {% if filter.qs %}
                 {% for usuario in filter.qs %}
 		        <tr>
-			        <td>{{ usuario.clave }}</td>
-			        <td>{{ usuario.id_rol }}</td>
+			       <td>{{ usuario.clave }}</td>
+                    <td>{{ usuario.nombre }}</td>
 			        <td>{{ usuario.apellido_paterno }}</td>
 			        <td>{{ usuario.apellido_materno }}</td>
-			        <td>{{ usuario.organigrama }}</td>
 			        <td>{{ usuario.password }}</td>
                     <td>{{ usuario.estatus }}</td>
+                    <td>{{ usuario.rol }}</td>
+                    <td>{{ usuario.organigrama }}</td>
 			        <td>
 				        <a class="btn" href="{% url 'usuario:usuario_mostrar' usuario.clave %}"><i class="material-icons">zoom_in</i></a>
-                        <a class="btn blue" href="{% url 'usuario:usuario_editar' usuario.apellido_paterno %}"><i class="material-icons">create</i></a>
-                        <a class="btn red" href="{% url 'usuario:usuario_eliminar' usuario.apellido_materno %}"><i class="material-icons">delete</i></a>
+                        <a class="btn blue" href="{% url 'usuario:usuario_editar' usuario.clave %}"><i class="material-icons">create</i></a>
+                        <a class="btn red" href="{% url 'usuario:usuario_eliminar' usuario.clave %}"><i class="material-icons">delete</i></a>
 			        </td>
 		        </tr>
 		        {% endfor %}

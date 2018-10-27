@@ -23,8 +23,8 @@
                 </tr>
             </thead>
             <tbody>
-		        {% if object_list %}
-		        {% for instructores in object_list %}
+		        {% if filter.qs %}
+		        {% for instructores in filter.qs %}
 		        <tr>
 			        <td>{{ instructores.id_instructor }}</td>
 			        <td>{{ instructores.nombre }}</td>
@@ -34,9 +34,9 @@
 			        <td>{{ instructores.rfc }}</td>
 			        <td>{{ instructores.formacion }}</td>
 			        <td>
-				        <a class="btn" href="{% url 'instructores:instruccion_mostrar' instructores.id_instrucctor %}"><i class="material-icons">zoom_in</i></a>
-                        <a class="btn blue" href="{% url 'instructores:instruccion_editar' instructores.id_instrucctor %}"><i class="material-icons">create</i></a>
-                        <a class="btn red" href="{% url 'instructores:instruccion_eliminar' instructores.id_instrucctor %}"><i class="material-icons">delete</i></a>
+				        <a class="btn" href="{% url 'instructores:instruccion_mostrar' instructores.id_instructor %}"><i class="material-icons">zoom_in</i></a>
+                        <a class="btn blue" href="{% url 'instructores:instruccion_editar' instructores.id_instructor %}"><i class="material-icons">create</i></a>
+                        <a class="btn red" href="{% url 'instructores:instruccion_eliminar' instructores.id_instructor %}"><i class="material-icons">delete</i></a>
 			        </td>
 		        </tr>
 		        {% endfor %}

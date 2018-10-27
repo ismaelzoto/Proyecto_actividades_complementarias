@@ -19,9 +19,9 @@
 			        <td>{{ coordinador.rol }}</td>
 			        <td>{{ coordinador.carrera }}</td>
 			        <td>
-				        <a class="btn" href="{% url 'coordinadores:coordina_mostrar' coordinador.usuario %}"><i class="material-icons">zoom_in</i></a>
-                        <a class="btn blue" href="{% url 'coordinadores:coordina_editar' coordinador.usuario %}"><i class="material-icons">create</i></a>
-                        <a class="btn red" href="{% url 'coordinadores:coordina_eliminar' coordinador.usuario %}"><i class="material-icons">delete</i></a>
+				        <a class="btn" href="{% url 'coordinadores:coordina_mostrar' coordinador.usuario.clave %}"><i class="material-icons">zoom_in</i></a>
+                        <a class="btn blue" href="{% url 'coordinadores:coordina_editar' coordinador.usuario.clave %}"><i class="material-icons">create</i></a>
+                        <a class="btn red" href="{% url 'coordinadores:coordina_eliminar' coordinador.usuario.clave %}"><i class="material-icons">delete</i></a>
 			        </td>
 		        </tr>
 		        {% endfor %}

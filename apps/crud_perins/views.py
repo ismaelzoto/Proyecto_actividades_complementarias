@@ -165,11 +165,11 @@ class areaDelete(DeleteView):
     success_url = reverse_lazy('area:area_lista')
 class areaShow(DetailView):
     model = area
-    template_name = 'crudperins/usuario_show.html'
+    template_name = 'crudperins/area_show.html'
 def search_J(request):
     area_list = area.objects.all()
     area_filter = areaFilter(request.GET, queryset=area_list)
-    return  render(request, 'crudperins/usuario_list_filter.html',{'filter':area_filter})
+    return  render(request, 'crudperins/area_list_filter.html',{'filter':area_filter})
 
 
 #--------------view de ivan-----------------------
@@ -181,6 +181,7 @@ class organigramaCreate(CreateView):
 class organigramaList(ListView):
     queryset = organigrama.objects.order_by('id_organigrama')
     template_name = 'crudperins/organigrama_list.html'
+    paginate_by = 10
 class organigramaUpdate(UpdateView):
     model = organigrama
     form_class = organigramaForm
@@ -206,6 +207,7 @@ class puestoCreate(CreateView):
 class puestoList(ListView):
     queryset = puesto.objects.order_by('id_puesto')
     template_name = 'crudperins/puesto_list.html'
+    paginate_by = 10
 class puestoUpdate(UpdateView):
     model = puesto
     form_class = puestoForm
@@ -444,7 +446,7 @@ class instructorDelete(DeleteView):
 
 class instructorShow(DetailView):
     model = instructor
-    template_name = 'crudperins/instructor_form.html'
+    template_name = 'crudperins/instructor_show.html'
 
 def search_i(request):
     instructor_list = instructor.objects.all()

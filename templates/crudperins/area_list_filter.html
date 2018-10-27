@@ -13,8 +13,8 @@
         <table class="striped">
 	        <thead>
 		        <tr>
-			        <td>id_area</td>
-			        <td>nombre_area</td>
+			        <td>Clave area</td>
+			        <td>Nonbre de area</td>
                 </tr>
             </thead>
             <tbody>
@@ -25,8 +25,8 @@
 			        <td>{{ area.nombre_area }}</td>
 			        <td>
 				        <a class="btn" href="{% url 'area:area_muestra' area.id_area %}"><i class="material-icons">zoom_in</i></a>
-                        <a class="btn blue" href="{% url 'area:area_edita' area.nombre_area %}"><i class="material-icons">create</i></a>
-                        <a class="btn red" href="{% url 'area:area_elimina' area.nombre_area %}"><i class="material-icons">delete</i></a>
+                        <a class="btn blue" href="{% url 'area:area_edita' area.id_area %}"><i class="material-icons">create</i></a>
+                        <a class="btn red" href="{% url 'area:area_elimina' area.id_area %}"><i class="material-icons">delete</i></a>
 			        </td>
 		        </tr>
 		        {% endfor %}

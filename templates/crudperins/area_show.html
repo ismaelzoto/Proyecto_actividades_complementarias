@@ -3,15 +3,14 @@
 {% block content %}
 <div class="row">
     <div class="col s12 m12 l12">
-        <p><strong>id_area: </strong>{{ object.id_area }} </p>
-        <p><strong>nombre_area: </strong>{{ object.nombre_area }} </p>
+        <p><strong>Id area: </strong>{{ object.id_area }} </p>
+        <p><strong>Nombre area: </strong>{{ object.nombre_area }} </p>
 
         <a class= "btn" href="{% url 'area:area_lista' %}">Ok</a>
-        <a class= "btn blue" href="{% url 'area:area_edita' object.password%}"><i class="material-icons">create</i></a>
-        <a class="btn red" href="{% url 'area:area_elimina' object.password %}"><i class="material-icons">delete</i></a>
+        <a class= "btn blue" href="{% url 'area:area_edita' object.id_area%}"><i class="material-icons">create</i></a>
+        <a class="btn red" href="{% url 'area:area_elimina' object.id_area %}"><i class="material-icons">delete</i></a>
     </div>
 </div>
-
 
 {% endblock %}
 
